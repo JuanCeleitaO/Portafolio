@@ -1,0 +1,61 @@
+.home-container {
+    min-height: calc(100vh - 128px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: radial-gradient(circle at top,
+            #3a0ca3,
+            #240046,
+            #10002b);
+
+    color: #e0aaff;
+    padding: 40px;
+
+    animation: fadeIn 1.2s ease;
+}
+
+.home-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #c77dff;
+    margin-bottom: 10px;
+}
+
+.home-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.home-description {
+    max-width: 600px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #e0aaff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.ant-btn-primary {
+    background: #7b2cbf;
+    border-color: #7b2cbf;
+}
+
+.ant-btn-primary:hover {
+    background: #9d4edd !important;
+    border-color: #9d4edd !important;
+}

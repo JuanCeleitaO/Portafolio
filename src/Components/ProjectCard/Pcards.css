@@ -1,0 +1,72 @@
+
+.project-card {
+    width: 100%;
+    max-width: 340px;
+    background: linear-gradient(180deg,
+            rgba(59, 7, 180, 0.85),
+            rgba(36, 0, 70, 0.9));
+    border-radius: 18px;
+    overflow: hidden;
+
+    border: 1px solid rgba(109, 42, 160, 0.35);
+    box-shadow: 0 20px 40px rgba(16, 0, 43, 0.6);
+
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+
+.project-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px rgba(199, 125, 255, 0.35);
+}
+
+
+.project-card .ant-card-cover img {
+    height: 190px;
+    object-fit: cover;
+    filter: brightness(0.95);
+}
+
+
+.project-card .ant-card-body {
+    background: transparent;
+    color: #e0d7ff;
+    padding: 20px;
+}
+
+/* Título */
+.project-card .ant-card-meta-title {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Descripción */
+.project-card .ant-card-meta-description {
+    color: #d5c8ff;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.project-card .ant-card-actions {
+    background: rgba(233, 89, 6, 0.9);
+    border-top: 1px solid rgba(199, 125, 255, 0.25);
+}
+
+.project-card .ant-card-actions>li {
+    margin: 0;
+}
+
+/* Iconos */
+.project-card .ant-card-actions a {
+    color: #c77dff;
+    font-size: 22px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card .ant-card-actions a:hover {
+    color: #ffffff;
+    transform: scale(1.25);
+}
+

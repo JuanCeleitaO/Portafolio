@@ -1,0 +1,53 @@
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+.projects-page {
+    min-height: 100vh;
+    width: 100%;
+    padding: 60px 40px;
+
+    background: radial-gradient(circle at top,
+            #3a0ca3,
+            #240046,
+            #10002b);
+
+    animation: fadeUp 0.8s ease;
+}
+
+/* =========================
+   AJUSTES ANT DESIGN
+========================= */
+.projects-page .ant-row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Espacio correcto entre tarjetas */
+.projects-page .ant-col {
+    display: flex;
+    justify-content: center;
+}
+
+/* =========================
+   ANIMACIÓN
+========================= */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .projects-page {
+        padding: 40px 20px;
+    }
+}
