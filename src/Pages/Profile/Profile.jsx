@@ -11,7 +11,11 @@ import {
 import "./Profile.css";
 export default function Profile() {
   return (
-    <Card title="Mi Perfil" className="profile-card">
+    <Card
+      title="Mi Perfil"
+      className="profile-card"
+      headStyle={{ fontSize: "24px" }}
+    >
       <Avatar className="avatar-profile" size={300} src={perfil} />
       <p style={{ marginTop: "16px" }}>
         Hola, mi nombre es Juan Celeita (ByDevCe_), soy estudiante de ingeniería
@@ -20,25 +24,27 @@ export default function Profile() {
         Soy apasionado por la tecnología, el desarrollo web y los videojuegos.
       </p>
       <div className="contacto">
-        <a href=" https://github.com/JuanCeleitaO" target="_blank">
+        <a href="https://github.com/JuanCeleitaO" target="_blank" rel="noopener noreferrer">
           <GithubOutlined className="git-icon" />
         </a>
         <a
-          href=" https://www.instagram.com/juan_celeita_?igsh=cWg2MGhoazNiaDlx"
+          href="https://www.instagram.com/juan_celeita_?igsh=cWg2MGhoazNiaDlx"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <InstagramOutlined className="git-icon" />
         </a>
-        <a href="https://www.facebook.com/share/17UTFkVAfJ/ " target="_blank">
+        <a href="https://www.facebook.com/share/17UTFkVAfJ/" target="_blank" rel="noopener noreferrer">
           <FacebookOutlined className="git-icon" />
         </a>
         <a
-          href=" https://www.linkedin.com/in/david-celeita-12a771362"
+          href="https://www.linkedin.com/in/david-celeita-12a771362"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <LinkedinOutlined className="git-icon" />
         </a>
-        <a href="celeitaospinajuan@gmail.com" target="_blank">
+        <a href="mailto:celeitaospinajuan@gmail.com">
           <MailOutlined className="git-icon" />
         </a>
       </div>
